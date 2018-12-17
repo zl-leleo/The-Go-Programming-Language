@@ -44,3 +44,12 @@ func main(){
 
 // 归并排序算法
 
+// 整数转成二进制函数
+func convertToBin(v int) string {
+	result := ""
+	for ; v > 0; v /= 2 {
+		result = strconv.Itoa(v%2) + result
+	}
+	return result
+}
+
